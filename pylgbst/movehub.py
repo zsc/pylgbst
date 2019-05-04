@@ -80,7 +80,7 @@ class MoveHub(object):
             log.debug("Waiting for builtin devices to appear: %s", builtin_devices)
             time.sleep(0.05)
         log.warning("Got only these devices: %s", builtin_devices)
-        raise RuntimeError("Failed to obtain all builtin devices")
+        #raise RuntimeError("Failed to obtain all builtin devices")
 
     def _notify(self, handle, data):
         orig = data
